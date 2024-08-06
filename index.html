@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="inputs-section | item1 fw-bold">
+          <div class="flex-group">
+            <label for="input-day">DAY</label>
+            <input
+              type="text"
+              id="input-day"
+              class="form-control"
+              placeholder="DD"
+              required
+            />
+            <span class="invalid-msg | fw-regular-italic"></span>
+          </div>
+
+          <div class="flex-group">
+            <label for="input-month">MONTH</label>
+            <input
+              type="text"
+              id="input-month"
+              class="form-control"
+              placeholder="MM"
+              required
+            />
+            <span class="invalid-msg | fw-regular-italic"></span>
+          </div>
+
+          <div class="flex-group">
+            <label for="input-year">YEAR</label>
+            <input
+              type="text"
+              id="input-year"
+              class="form-control"
+              placeholder="YY"
+              required
+            />
+            <span class="invalid-msg | fw-regular-italic"></span>
+          </div>
+        </div>
+
+        <div class="position-rel item2">
+          <hr class="horizontal-line" />
+
+          <button id="confirm-btn" class="btn">
+            <svg
+              class="icon-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="44"
+              viewBox="0 0 46 44"
+            >
+              <g fill="none" stroke="#FFF" stroke-width="2">
+                <path
+                  d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+
+        <div class="outputs-section | item3">
+          <p class="fw-extrabold-italic">
+            <span id="output-year" class="txt-primary-2">- -</span> years
+          </p>
+          <p class="fw-extrabold-italic">
+            <span id="output-month" class="txt-primary-2">- -</span> months
+          </p>
+          <p class="fw-extrabold-italic">
+            <span id="output-day" class="txt-primary-2">- -</span> days
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
